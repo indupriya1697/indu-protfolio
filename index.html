@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Dhannana Indu Priya, Computer Science and Engineering student.">
+  <title>Indu Priya | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg: #0b1020;
+      --card: #131b2e;
+      --text: #f1f5f9;
+      --muted: #a9b5ca;
+      --accent: #70e1d1;
+      --border: #29344b;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11, 16, 32, 0.95);
+      border-bottom: 1px solid var(--border);
+      padding: 15px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: var(--text);
+    }
+
+    .container {
+      width: min(1080px, 86%);
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      padding: 75px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 5px 13px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4.7rem);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+
+    h1 span, h2 span {
+      color: var(--accent);
+    }
+
+    .hero p {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: #07131b;
+      font-weight: bold;
+      padding: 11px 20px;
+      border-radius: 8px;
+      margin: 5px 8px 5px 0;
+    }
+
+    .button.secondary {
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--border);
+    }
+
+    section {
+      padding: 65px 0;
+      scroll-margin-top: 75px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      min-width: 0;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .year {
+      color: var(--accent);
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill {
+      padding: 7px 12px;
+      background: #202b40;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 0.92rem;
+    }
+
+    .contact-card {
+      text-align: center;
+      padding: 35px 24px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding: 22px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 85px 0;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="#home">Indu Priya.</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Project</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero" id="home">
+        <div>
+          <div class="tag">CSE Undergraduate | Class of 2028</div>
+
+          <h1>Hello, I'm<br><span>Dhannana Indu Priya</span></h1>
+
+          <p>
+            I am a Computer Science and Engineering student interested in
+            software development, programming, and AI-based solutions.
+            I enjoy working with teams and building practical projects
+            that solve real-world problems.
+          </p>
+
+          <a class="button" href="#projects">Explore My Project</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="section-intro">
+          A little about my education, interests, and career goals.
+        </p>
+
+        <div class="card">
+          <p>
+            I am pursuing a B.Tech in Computer Science and Engineering
+            at Lendi Institute of Engineering and Technology, with a
+            CGPA of 8.9/10. I have hands-on project experience in voice
+            authentication and anti-deepfake technology, with a focus
+            on frontend development and team coordination.
+          </p>
+          <p style="margin-top: 14px;">
+            My goal is to begin a career in software development, continue
+            improving my technical skills, and contribute to meaningful
+            projects in a professional environment.
+          </p>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2 class="section-title">My <span>Education</span></h2>
+        <p class="section-intro">My academic background.</p>
+
+        <div class="grid">
+          <article class="card">
+            <div class="year">Expected 2028</div>
+            <h3>B.Tech — Computer Science and Engineering</h3>
+            <p>Lendi Institute of Engineering and Technology</p>
+            <p>CGPA: 8.9/10</p>
+          </article>
+
+          <article class="card">
+            <div class="year">2024</div>
+            <h3>Intermediate — Class XII</h3>
+            <p>Sri Chaitanya Junior College</p>
+            <p>Percentage: 93%</p>
+          </article>
+
+          <article class="card">
+            <div class="year">2022</div>
+            <h3>Secondary School — Class X</h3>
+            <p>SVVP School</p>
+            <p>Percentage: 89.33%</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <p class="section-intro">
+          Technologies and concepts I have worked with.
+        </p>
+
+        <div class="card">
+          <h3>Programming</h3>
+          <div class="skills">
+            <span class="skill">C — Basics</span>
+            <span class="skill">Java — Basics</span>
+            <span class="skill">Python</span>
+          </div>
+
+          <h3 style="margin-top: 25px;">Project Technologies</h3>
+          <div class="skills">
+            <span class="skill">PyTorch</span>
+            <span class="skill">Torchaudio</span>
+            <span class="skill">SpeechBrain</span>
+            <span class="skill">Gradio</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+          </div>
+
+          <h3 style="margin-top: 25px;">Areas of Interest</h3>
+          <div class="skills">
+            <span class="skill">Voice Authentication</span>
+            <span class="skill">Deepfake Detection</span>
+            <span class="skill">Audio Processing</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Featured <span>Project</span></h2>
+        <p class="section-intro">
+          A project that demonstrates my practical experience.
+        </p>
+
+        <article class="card">
+          <div class="tag">Deep Learning · Audio Security</div>
+          <h3>Voice Authentication with Anti-Deepfake System</h3>
+
+          <p>
+            A dual-layer voice security system designed to authenticate
+            authorized users and detect AI-generated voices.
+          </p>
+
+          <ul>
+            <li>Contributed to frontend development using Gradio, HTML, and CSS.</li>
+            <li>Worked on voice registration and authentication interfaces.</li>
+            <li>Used PyTorch, Torchaudio, and SpeechBrain for deep-learning
+              and audio-processing components.</li>
+            <li>Coordinated team activities and supported collaboration
+              through project completion.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="achievements">
+        <h2 class="section-title">Certifications & <span>Achievements</span></h2>
+        <p class="section-intro">
+          Learning milestones and participation.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Certifications</h3>
+            <ul>
+              <li>Internet of Things (IoT) — NPTEL: 56%</li>
+              <li>Data Analytics with Python — NPTEL: 65%</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Hackathon Participation</h3>
+            <p>
+              Participated in the Allen IIT Summit 2026 —
+              24-Hour Hackathon and received a participation certificate.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Soft Skills</h3>
+            <div class="skills">
+              <span class="skill">Communication</span>
+              <span class="skill">Teamwork</span>
+              <span class="skill">Time Management</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card contact-card">
+          <h2 class="section-title">Let's <span>Connect</span></h2>
+          <p class="section-intro">
+            Feel free to contact me regarding software development
+            opportunities and professional connections.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:Indupriyadhannana@gmail.com">Email Me</a>
+            <a href="https://www.linkedin.com/in/indupriya-dhannana-185033352"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/indupriya1697"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="tel:+919390956350">Call Me</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Dhannana Indu Priya · Personal Portfolio</p>
+    <p>Designed for professional interviews and career opportunities.</p>
+  </footer>
+</body>
+</html>
